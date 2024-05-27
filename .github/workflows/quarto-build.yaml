@@ -39,7 +39,7 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: quarto-dev/quarto-actions/publish@v2
         with:
-          path: book # By default, the current working dir is used i.e `quarto render .`
+          path: book
           target: gh-pages
           clean: false
         env:
