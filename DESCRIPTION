@@ -13,6 +13,7 @@ Imports:
     dplyr,
     ggplot2,
     shiny,
+    shinylive,
     shinyWidgets,
     tibble
 Encoding: UTF-8
