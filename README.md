@@ -18,8 +18,10 @@ remotes::install_github('jbryer/WebRBookTemplate')
 
 ``` r
 usethis::use_package('dplyr')
+usethis::use_tidy_description()
 devtools::document()
 devtools::install()
+devtools::check()
 ```
 
 ## Using the package

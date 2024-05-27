@@ -3,3 +3,4 @@
 book/
 ^README\.Rmd$
 ^LICENSE\.md$
+.github/

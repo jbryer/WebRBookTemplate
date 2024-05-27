@@ -6,6 +6,13 @@
 \usage{
 loess_shiny_server(input, output, session)
 }
+\arguments{
+\item{input}{shiny input object.}
+
+\item{output}{shiny output object.}
+
+\item{session}{shiny session object.}
+}
 \value{
 a Shiny UI object.
 }

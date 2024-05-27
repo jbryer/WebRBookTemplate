@@ -1,10 +1,23 @@
 #' Loess Visualization
 #'
+#' @param formula formula for regression.
+#' @param data data.frame.
+#' @param center where along the x-axis should the local regression be estimated.
+#' @param degree the degree of the polynomials to be used, normally 1 or 2.
+#' @param span the parameter alpha which controls the degree of smoothing.
+#' @param draw_loess whether to draw the Loess regression up to the center.
+#' @param show_loess whether to draw the entire Less regression line.
+#' @param xlab label for the x-axis.
+#' @param ylab label for the y-axis.
+#' @param ... currenlty not used.
 #' @export
 #' @import dplyr
 #' @import ggplot2
+#' @importFrom datasets faithful
+#' @importFrom stats as.formula dist fitted loess median predict rnorm
+#' @importFrom utils data
 #' @examples
-#' data("faithful")
+#' data("faithful", package = "datasets")
 #' loess_vis(formula = eruptions ~ waiting, data = faithful)
 loess_vis <- function(formula,
 					  data,
