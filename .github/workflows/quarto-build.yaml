@@ -33,6 +33,5 @@ jobs:
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
-          to: html # If set, it will be equivalent to `quarto render --to html`
           path: book # By default, the current working dir is used i.e `quarto render .`
           target: gh-pages
