@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/404.html</loc>
+  </url>
+  <url>
+    <loc>/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>/authors.html</loc>
+  </url>
+  <url>
+    <loc>/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/loess_shiny.html</loc>
+  </url>
+  <url>
+    <loc>/reference/loess_shiny_server.html</loc>
+  </url>
+  <url>
+    <loc>/reference/loess_shiny_ui.html</loc>
+  </url>
+  <url>
+    <loc>/reference/loess_vis.html</loc>
+  </url>
+</urlset>
