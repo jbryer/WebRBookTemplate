@@ -35,3 +35,5 @@ jobs:
         with:
           path: book # By default, the current working dir is used i.e `quarto render .`
           target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
