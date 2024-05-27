@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/loess_shiny.html</loc>
-  </url>
-  <url>
-    <loc>/reference/loess_shiny_server.html</loc>
-  </url>
-  <url>
-    <loc>/reference/loess_shiny_ui.html</loc>
-  </url>
-  <url>
-    <loc>/reference/loess_vis.html</loc>
+    <loc>https://jbryer.github.io/WebRBookTemplate/index.html</loc>
+    <lastmod>2024-05-27T21:52:01.145Z</lastmod>
   </url>
 </urlset>

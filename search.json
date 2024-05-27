@@ -1,0 +1,12 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quarto Book Template within R Package with WebR",
+    "section": "",
+    "text": "1 Introduction\nThis Github repository contains both an R package and a Quarto book site. The goal is:\n\nImplement Shiny applications within an R package along with supporting functions.\nBuild the package to be used with shinylive.\nBuild a Quarto book site that embeds the Shiny applications within the book.\n\nThe advantage of this approach is that Shiny applications can: 1. Be run directly from the R package installed in any R session; 2. Embedded within websites using shinylive; and/or 3. Hosted on a traditional Shiny server.\nThis example uses the Shiny application embedded within the R package.\n#| standalone: true\n#| viewerHeight: 500\nwebr::install(\"WebRBookTemplate\", repos = c(\"https://jbryer.github.io/WebRBookTemplate/\", \"https://repo.r-wasm.org/\"))\nlibrary(WebRBookTemplate)\nlibrary(shiny)\nshiny::shinyApp(ui = WebRBookTemplate::loess_shiny_ui,\n                server = WebRBookTemplate::loess_shiny_server)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  }
+]
