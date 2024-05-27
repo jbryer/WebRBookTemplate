@@ -17,7 +17,23 @@ remotes::install_github('jbryer/WebRBookTemplate')
 ## Building Package Locally
 
 ``` r
-usethis::use_package('shiny')
+usethis::use_package('dplyr')
 devtools::document()
 devtools::install()
+```
+
+## Using the package
+
+### Loess Visualization
+
+``` r
+library(WebRBookTemplate)
+data("faithful")
+WebRBookTemplate::loess_vis(formula = eruptions ~ waiting, data = faithful)
+```
+
+### Loess Shiny Application
+
+``` r
+WebRBookTemplate::loess_shiny()
 ```

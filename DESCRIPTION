@@ -13,3 +13,5 @@ Imports:
     dplyr,
     ggplot2,
     shiny
+URL: https://github.com/jbryer/WebRBookTemplate
+BugReports: https://github.com/jbryer/WebRBookTemplate/issues
