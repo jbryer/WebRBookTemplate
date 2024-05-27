@@ -1,0 +1,54 @@
+---
+output: github_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# WebRBookTemplate
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of WebRBookTemplate is to ...
+
+## Installation
+
+You can install the development version of WebRBookTemplate like so:
+
+```{r, eval=FALSE}
+remotes::install_github('jbryer/WebRBookTemplate')
+```
+
+## Building Package Locally
+
+```{r, eval=FALSE}
+usethis::use_package('dplyr')
+devtools::document()
+devtools::install()
+```
+
+## Using the package
+
+### Loess Visualization
+
+```{r, eval=FALSE}
+library(WebRBookTemplate)
+data("faithful")
+WebRBookTemplate::loess_vis(formula = eruptions ~ waiting, data = faithful)
+```
+
+### Loess Shiny Application
+
+```{r, eval=FALSE}
+WebRBookTemplate::loess_shiny()
+```
+

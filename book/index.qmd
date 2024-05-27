@@ -1,0 +1,11 @@
+# Introduction
+
+This Github repository contains both an R package and a Quarto book site. The goal is:
+
+* Implement Shiny applications within an R package along with supporting functions.
+* Build the package to be used with `shinylive.`
+* Build a Quarto book site that embeds the Shiny applications within the book.
+
+The advantage of this approach is that Shiny applications can: 1. Be run directly from the R package installed in any R session; 2. Embedded within websites using `shinylive`; and/or 3. Hosted on a traditional Shiny server.
+
+

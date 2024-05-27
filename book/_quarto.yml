@@ -1,0 +1,44 @@
+project:
+  type: book
+  output-dir: "../docs/"
+
+book:
+  title: "Quarto Book Template within R Package with WebR"
+  author:
+    - name: Jason Bryer
+      orcid: 0000-0002-2454-0402
+      corresponding: true
+      email: jason@bryer.org
+      url: https://bryer.org
+      affiliations:
+        - name: City University of New York
+          department: School of Professional Studies
+          url: https://sps.cuny.edu/academics/graduate/master-science-data-science-ms
+  chapters:
+    - index.qmd
+  site-url: https://jbryer.github.io/WebRBookTemplate/
+  repo-url: https://github.com/jbryer/WebRBookTemplate/
+  repo-subdir: book/
+  repo-branch: main
+  repo-actions: edit
+  issue-url: https://github.com/jbryer/WebRBookTemplate/issues
+
+bibliography: references.bib
+
+format:
+  html:
+    toc: false
+    theme: cosmo
+    sidebar:
+      style: floating
+    code-fold: show
+    code-summary: "Show the code"
+    grid:
+      sidebar-width: 200px
+      body-width: 1030px
+      margin-width: 70px
+  # pdf:
+  #   documentclass: scrreprt
+
+filters:
+  - shinylive
