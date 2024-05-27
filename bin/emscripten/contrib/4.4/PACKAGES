@@ -1,5 +1,5 @@
 Package: WebRBookTemplate
 Version: 0.1.0
-Imports: dplyr, ggplot2, shiny, shinyWidgets, tibble
+Imports: dplyr, ggplot2, shiny, shinylive, shinyWidgets, tibble
 License: GPL (>= 3)
-MD5sum: c27e9ca16fb69e1c868f3f278bc5f872
+MD5sum: 20d119635a24f30ecd2d54ebfb9340ec
