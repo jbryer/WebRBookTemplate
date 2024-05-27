@@ -9,3 +9,14 @@ This Github repository contains both an R package and a Quarto book site. The go
 The advantage of this approach is that Shiny applications can: 1. Be run directly from the R package installed in any R session; 2. Embedded within websites using `shinylive`; and/or 3. Hosted on a traditional Shiny server.
 
 
+This example uses the Shiny application embedded within the R package.
+
+```{shinylive-r}
+#| standalone: true
+#| viewerHeight: 500
+webr::install("WebRBookTemplate", repos = c("https://jbryer.github.io/WebRBookTemplate/", "https://repo.r-wasm.org/"))
+library(WebRBookTemplate)
+library(shiny)
+shiny::shinyApp(ui = WebRBookTemplate::loess_shiny_ui,
+				server = WebRBookTemplate::loess_shiny_server)
+```
