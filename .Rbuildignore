@@ -4,3 +4,4 @@ book/
 ^README\.Rmd$
 ^LICENSE\.md$
 .github/
+build.R

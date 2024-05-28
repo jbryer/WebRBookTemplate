@@ -6,10 +6,10 @@ on:
   # Or when triggered manually
   workflow_dispatch: {}
 
-name: shinylive-export
+name: build-site
 
 jobs:
-  shinylive-export:
+  build-site:
     runs-on: ubuntu-latest
     concurrency:
       group: pkgdown-${{ github.event_name != 'pull_request' || github.run_id }}
@@ -21,6 +21,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Install R
         uses: r-lib/actions/setup-r@v2
@@ -34,8 +37,8 @@ jobs:
           extra-packages: any::pak, any::pkgdown, local::.
           needs: website
 
-      - name: Export shinylive apps
-        run: Rscript -e 'source("inst/shiny/shinylive-export.R")'
+      - name: Build site
+        run: Rscript -e 'source("build.R")'
 
       - name: Deploy wasm R packages to GitHub pages 🚀
         if: github.event_name != 'pull_request'

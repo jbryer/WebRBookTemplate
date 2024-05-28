@@ -1,6 +1,9 @@
 out_dir <- '_site/shiny/'
 base_dir <- 'inst/shiny/'
 apps <- list.dirs(base_dir, full.names = FALSE, recursive = FALSE)
+
+quarto::quarto_render('book/')
+
 for(i in apps) {
 	shinylive::export(appdir = paste0(base_dir, i),
 					  destdir = out_dir,

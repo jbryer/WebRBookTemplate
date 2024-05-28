@@ -6,7 +6,7 @@
 [![R-CMD-check](https://github.com/jbryer/WebRBookTemplate/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jbryer/WebRBookTemplate/actions/workflows/R-CMD-check.yaml)
 [![webr-build-binary](https://github.com/jbryer/WebRBookTemplate/actions/workflows/deploy-cran-repo.yaml/badge.svg)](https://github.com/jbryer/WebRBookTemplate/actions/workflows/deploy-cran-repo.yml)
 [![Quarto
-Book](https://github.com/jbryer/WebRBookTemplate/actions/workflows/quarto-build.yaml/badge.svg)](https://github.com/jbryer/WebRBookTemplate/actions/workflows/quarto-build.yaml)
+Book](https://github.com/jbryer/WebRBookTemplate/actions/workflows/build-site.yaml/badge.svg)](https://github.com/jbryer/WebRBookTemplate/actions/workflows/build-site.yaml)
 <!-- badges: end -->
 
 This repository is adapted from this repo:
