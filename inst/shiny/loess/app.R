@@ -1,3 +1,6 @@
+if(require(webr)) {
+	webr::install("WebRBookTemplate", repos = c("https://jbryer.github.io/WebRBookTemplate/", "https://repo.r-wasm.org/"))
+}
 library(WebRBookTemplate)
 library(shiny)
 
