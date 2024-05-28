@@ -27,13 +27,13 @@ jobs:
         uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
-          r-version: 4.3.2
 
       - name: Build WASM R packages
         uses: r-wasm/actions/build-rwasm@v1
         with:
           packages: "."
           repo-path: "_site"
+          webr-image: "ghcr.io/r-wasm/webr:v0.3.3"
 
       - name: Deploy wasm R packages to GitHub pages 🚀
         if: github.event_name != 'pull_request'
