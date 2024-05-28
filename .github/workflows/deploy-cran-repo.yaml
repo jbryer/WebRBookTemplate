@@ -29,7 +29,7 @@ jobs:
       #     use-public-rspm: true
 
       - name: Build WASM R packages
-        uses: r-wasm/actions/build-rwasm@v1
+        uses: r-wasm/actions/tree/main/build-rwasm@v1
         with:
           packages: "."
           repo-path: "_site"
