@@ -1,1 +1,0 @@
-[{"name":"app.R","content":"if(require(webr)) {\n\twebr::install(\"WebRBookTemplate\", repos = c(\"https://jbryer.github.io/WebRBookTemplate/\", \"https://repo.r-wasm.org/\"))\n}\nlibrary(WebRBookTemplate)\nlibrary(shiny)\n\nshiny::shinyApp(ui = WebRBookTemplate::loess_shiny_ui,\n\t\t\t\tserver = WebRBookTemplate::loess_shiny_server)\n","type":"text"}]
